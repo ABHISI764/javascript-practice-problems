@@ -9,3 +9,11 @@ function evenOrOdd(num) {
 }
 let number = 4;
 console.log(evenOrOdd(number)) //Even
+
+// same result using Ternary Operator;
+
+// function evenOrOdd(num) {
+//     return num % 2 == 0 ? "Even " : "Odd";
+//  }
+//  const number = 5;
+//  console.log(evenOrOdd(number)); //Odd
