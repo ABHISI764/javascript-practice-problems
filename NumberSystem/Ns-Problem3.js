@@ -7,6 +7,18 @@ function sumOfSquaresToThird(num1,num2,num3){
 const num1 = 3;
 const num2 = 4;
 const num3 = 5;
-console.log(sumOfSquaresToThird(num1,num2,num3))
+console.log(sumOfSquaresToThird(num1,num2,num3)) // true
 
 
+//  same result using Math.pow()
+
+// function hasSumOfSquaresToThird(num1, num2, num3) {
+//     return Math.pow(num1, 2) + Math.pow(num2, 2) === Math.pow(num3, 2)
+//         || Math.pow(num2, 2) + Math.pow(num3, 2) === Math.pow(num1, 2)
+//         || Math.pow(num3, 2) + Math.pow(num1, 2) === Math.pow(num2, 2)
+// }
+// const num1 = 3;
+// const num2 = 4;
+// const num3 = 5;
+// console.log(hasSumOfSquaresToThird(num1, num2, num3)); 
+ 
