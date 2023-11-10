@@ -9,3 +9,13 @@ function convertNumber(number) {
 const givenNumber = 12345;
 let result = convertNumber(givenNumber)
 console.log(result) //54321
+
+
+// same result reduce variables
+// function reverseNumber(number){
+//     const reverseNum = parseInt(number.toString().split('').reverse().join(''))
+//     return reverseNum;
+// }
+// const givenNumber = 12345;
+// const result = reverseNumber(givenNumber)
+// console.log(result) //54321
