@@ -21,3 +21,13 @@ console.log(result) // 2
 // const givenAraay = [5, 3, 8, 2, 7];
 // let result = findMin(givenAraay)
 // console.log(result) // 2
+
+// Method 3: Using the reduce() Method
+
+// function minElements(num) {
+//     let min = num.reduce((accu, i)=>Math.min(accu, i))
+//     return min;
+//   }
+//   const givenAraay = [5, 3, 8, 2, 7];
+//   let result = minElements(givenAraay)
+//   console.log(result) // 2
