@@ -18,3 +18,17 @@ console.log(sum); // 15
 // const myArray1 = [1, 2, 3, 4, 5];
 // const result = sumOfAllArray(myArray1);
 // console.log(result) // 15
+
+
+// Method 2: Using the forEach() Method
+
+// function sumOfAllArray(num) {
+//     let sum = 0;
+//     num.forEach(element => {
+//         sum += element;
+//     });
+//     return sum;
+// }
+// const myArray1 = [1, 2, 3, 4, 5];
+// let result = sumOfAllArray(myArray1);
+// console.log(result) // 15
