@@ -6,7 +6,6 @@
         which indicates that the list is sorted. */
 
 // Method 1: 
-
 function bubbleSort(arr) {
     const len = arr.length;
     for (let i = 0; i < len - 1; i++) {

@@ -6,7 +6,6 @@ portion of the list and swapping it with the element at the beginning of the uns
  This process continues until the entire list is sorted.  */
 
 // Method 1 :
-
 function selectionSort(array) {
     for (let i = 0; i < array.length; i++) {
       let min = i;
@@ -23,6 +22,5 @@ function selectionSort(array) {
     }
     return array;
   }
-  
   const res = selectionSort([0, 2, 34, 22, 10, 19])
   console.log(res) // [0,2,10,19,22,34]
