@@ -15,13 +15,24 @@ console.log(result) //dlroW olleH
 
 // Method 2.
 
-function reverseStrring(str) {
-    let splitstr = str.split("");
-    let reverse = splitstr.reverse();
-    let joinstr = reverse.join("");
-    return joinstr;
+// function reverseStrring(str) {
+//     let splitstr = str.split("");
+//     let reverse = splitstr.reverse();
+//     let joinstr = reverse.join("");
+//     return joinstr;
+// }
+
+// let originalStr = 'Hello Wrold';
+// let result = reverseStrring(originalStr);
+// console.log(result)
+
+// same solution with less code
+
+function reverseString(str){
+    return str.split('').reverse().join('');
 }
 
-let originalStr = 'Hello Wrold';
-let result = reverseStrring(originalStr);
+const originalString = 'Hello World';
+let result = reverseString(originalString)
 console.log(result)
+
