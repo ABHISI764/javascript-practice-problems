@@ -2,7 +2,9 @@
 /* Ans. Throttling in JavaScript is a technique used to limit the rate at which a function 
 can be executed. It ensures that the function is not called more frequently than a specified 
 time interval,even if the function is triggered multiple times within that interval.
-Example: like button disable for 5 seconds to prevent multiple click */
+Example: like button disable for 5 seconds to prevent multiple click 
+Video URL : https://www.youtube.com/watch?v=cxi25srbYX8&t=7s
+*/
 
 const myThrottle = (fn, delay) => {
     return function () {
