@@ -24,3 +24,14 @@ const newItems = items.filter((item)=>{
     return item.price <= 100;
 })
 console.log(newItems)
+
+
+// Example 2:- 
+
+
+// function filteredPrices(element) {
+//     return element > 2000 && !Number.isNaN(element);
+// }
+// const prices = [1800, 2000, null, 3000, 5000, "Thousand", 500, 8000]
+// const result = prices.filter(filteredPrices);
+// console.log(result) // [ 3000, 5000, 8000 ]
