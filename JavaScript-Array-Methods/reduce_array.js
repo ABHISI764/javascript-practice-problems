@@ -8,3 +8,13 @@ function join(acc, currenvalue) {
 }
 let result = numbers.reduce(join)
 console.log(result) // Output 1330
+
+// Example 2:- 
+
+const numbers = [1, 2, 3, 4, 5, 6];
+
+function sumFunction(accumulator, currentValue){
+    return accumulator + currentValue;
+}
+let sumResult = numbers.reduce(sumFunction)
+console.log(sumResult) // output 21
