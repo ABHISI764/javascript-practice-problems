@@ -18,3 +18,11 @@ function sumFunction(accumulator, currentValue){
 }
 let sumResult = numbers.reduce(sumFunction)
 console.log(sumResult) // output 21
+
+// Example 3:- Subtracting Numbers in Array
+const numbers = [1800, 50, 300, 20, 100];
+function diffrenceFun(accumulator, currentValue){
+    return accumulator - currentValue;
+}
+let diffResult = numbers.reduce(diffrenceFun)
+console.log(diffResult) // output 1330
