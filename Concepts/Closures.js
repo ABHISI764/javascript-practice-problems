@@ -7,7 +7,6 @@ function outerFunction() {
 
     function innerFunction(){
         console.log(outerVariable)
-
     }
     return innerFunction()
 }
