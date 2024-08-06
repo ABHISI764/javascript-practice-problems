@@ -5,12 +5,10 @@
 Otherwise it returns false. */
 
  // Method 1:- 
-
  const pets = ['cat', 'dog', 'bat'];
 console.log(pets.includes('cat'));
 
 // Method 2:- 
-
 let text = "Hello world, welcome to the universe.";
 let result = text.includes("world");
 console.log(result)

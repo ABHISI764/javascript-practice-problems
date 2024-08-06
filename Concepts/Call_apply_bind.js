@@ -26,3 +26,23 @@ printFullName.apply(name2, ["Mumbai", "Maharastra"]);
 // bind method
 let printMyName = printFullName.bind(name2, "Mumbai", "Maharastra")
 console.log(printMyName())
+
+
+
+
+// bind Method: 
+// The bind() method allows an object to borrow a method from another object without copying.
+const person1 = {
+    firstName: "John ",
+    lastName: "Doe",
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+}
+const person2 = {
+    firstName: "Elon",
+    lastName: "Musk"
+}
+
+  const result = person1.fullName.bind(person2);
+  console.log(result())
