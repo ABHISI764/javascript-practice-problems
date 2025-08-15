@@ -12,3 +12,14 @@ function curriedAdd(a){
     }
 }
 console.log(curriedAdd(1)(2)(3));
+
+// Example 2:-
+
+function greet(name){
+    return function(morning){
+        return function(punchuation){
+            return `${name} ${morning} ${punchuation}`
+        }
+    }
+}
+console.log(greet('John') ('Good morning')('!'))
