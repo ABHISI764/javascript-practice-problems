@@ -1,4 +1,7 @@
-/* Q. We can compare arrays for equality (containing the same elements in the same order) 
+
+// Q. Comparing Multiple Arrays
+
+/* Ans. We can compare arrays for equality (containing the same elements in the same order) 
    by checking their lengths and then iterating through them to compare each element. */
 
    // Ans. 
