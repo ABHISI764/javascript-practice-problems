@@ -15,7 +15,7 @@ console.log(result) //dlroW olleH
 
 // Method 2.
 
-// function reverseStrring(str) {
+// function reverseStrring(str) { 
 //     let splitstr = str.split("");
 //     let reverse = splitstr.reverse();
 //     let joinstr = reverse.join("");

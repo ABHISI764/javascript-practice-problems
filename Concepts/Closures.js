@@ -4,7 +4,6 @@ after the outer function has finished executing. */
 
 function outerFunction() {
     const outerVariable = 'i am from outer function'
-
     function innerFunction(){
         console.log(outerVariable)
     }
