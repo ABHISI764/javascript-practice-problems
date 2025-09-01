@@ -1,5 +1,6 @@
 // Q. Waht is rest parameter;
 // Ans . The rest parameter syntax allows a function to accept an indefinite number of arguments as an array,
+// Link URL :https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
 
 function sum(...theArgs){
     let total = 0;
