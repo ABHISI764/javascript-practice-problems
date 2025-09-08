@@ -1,3 +1,19 @@
+/* 
+  Shallow Copy
+  Definition: A shallow copy only copies the first level of the object/array.
+  If the object contains nested objects, the copy will still reference the same memory for those nested objects.
+  Changes to nested values in the copy will affect the original.
+*/
+
+/* 
+  Deep Copy
+  Definition: A deep copy creates a completely independent clone, including all nested objects/arrays.
+  Changes in the copy do not affect the original.
+  
+*/
+
+
+
 // normal method 
 
 // var obj1 = {
