@@ -1,4 +1,4 @@
-// Q. Write a java program to remove all white spaces from a string?
+// Q. Write a javaScript program to remove all white spaces from a string?
 
 
 function removeSpaces(str){
@@ -12,3 +12,15 @@ function removeSpaces(str){
 
 }
 console.log(removeSpaces(" N o l o g i e s "));
+
+function removeSpaces(str) {
+    let space = "";
+    for (let i = 0; i < str.length; i++) {
+      if (str[i] != " ") {
+        space += str[i];
+      }
+    }
+    return space;
+  }
+  console.log(removeSpaces(" N o l o g i e s "));
+  

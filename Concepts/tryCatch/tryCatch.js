@@ -10,7 +10,7 @@
     // Example 1: 
 
     // try {
-    //     console.log(age);
+    //     console.log(age);    ₹       
 
     // } catch (error) {
     //     console.log("error.message ", error.message);
