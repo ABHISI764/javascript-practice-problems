@@ -5,7 +5,7 @@ function minEvenIndexed(arr) {
       if(arr[i] < min){
         min = arr[i]
       }
-    }
+    } 
     return min
   }
   
