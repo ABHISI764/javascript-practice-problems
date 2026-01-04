@@ -9,3 +9,12 @@ function findIndex(arr, target) {
     return -1;
   }
   console.log(findIndex([10, 20, 30, 40, 50], 30));
+
+
+  // Method 2:
+
+
+function findIndex(arr, target) {
+    return arr.indexOf(target)
+}
+console.log(findIndex([10, 20, 30, 40, 50], 30));
