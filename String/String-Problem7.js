@@ -6,5 +6,4 @@ function isPalindrome(s){
     return s === reversed ;
 }
 
-
 console.log(isPalindrome("madam")); // Output: true
