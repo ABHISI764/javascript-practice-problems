@@ -5,26 +5,54 @@ class Node {
     }
 }
 
-class Linklist {
+class Node {
+    constructor(data, next = null) {
+      this.data = data;
+      this.next = next;
+    }
+  }
+  
+  class Linklist {
     constructor() {
-        this.head = null;
-        this.size = 0;
+      this.head = null;
+      this.size = 0;
     }
-    insertFirst(data){
-        this.head = new Node(data,this.head);
-        this.size++;
+  
+    // Insert first node
+    insertFirst(data) {
+      this.head = new Node(data, this.head);
+      this.size++;
     }
-    printListData(){
-        let current = this.head;
-        while(current){
-            console.log(current.data)
-            current = current.next;
+  
+    // Insert last node
+    insertLast(data) {
+      let node = new Node(data);
+      let current;
+      // If empty, make head
+      if (!this.head) {
+        this.head = node;
+      } else {
+        current = this.head;
+        while (current.next) {
+          current = current.next;
         }
+        current.next = node;
+      }
+      this.size++;
     }
-}
-
-const ll = new Linklist()
-ll.insertFirst(100);
-ll.insertFirst(200);
-ll.insertFirst(300);
-ll.printListData();
+    printListData() {
+      let current = this.head;
+      while (current) {
+        console.log(current.data);
+        current = current.next;
+      }
+    }
+  }
+  
+  const ll = new Linklist();
+  ll.insertFirst(100);
+  ll.insertFirst(200);
+  ll.insertFirst(300);
+  ll.insertLast(400);
+  ll.printListData();
+  
