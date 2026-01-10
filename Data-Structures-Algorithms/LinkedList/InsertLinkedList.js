@@ -1,11 +1,4 @@
 class Node {
-    constructor(data,next = null){
-        this.data = data;
-        this.next = next;
-    }
-}
-
-class Node {
     constructor(data, next = null) {
       this.data = data;
       this.next = next;
@@ -40,6 +33,38 @@ class Node {
       }
       this.size++;
     }
+  
+    // Insert at index
+    insertAt(data, index) {
+      //  If index is out of range
+      if (index > 0 && index > this.size) {
+        return;
+      }
+  
+      // If first index
+      if (index === 0) {
+        this.insertFirst(data);
+        return;
+      }
+  
+      const node = new Node(data);
+      let current, previous;
+  
+      // Set current to first
+      current = this.head;
+      let count = 0;
+  
+      while (count < index) {
+        previous = current; // Node before index
+        count++;
+        current = current.next; // Node after index
+      }
+  
+      node.next = current;
+      previous.next = node;
+      this.size++;
+    }
+  
     printListData() {
       let current = this.head;
       while (current) {
@@ -54,5 +79,6 @@ class Node {
   ll.insertFirst(200);
   ll.insertFirst(300);
   ll.insertLast(400);
+  ll.insertAt(500, 2);
   ll.printListData();
   
