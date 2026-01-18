@@ -79,6 +79,33 @@ class Linklist {
       return null;
     }
 
+    removeAt(index) {
+      if (index > 0 && index > this.size) {
+        return;
+      }
+  
+      let current = this.head;
+      let previous;
+      let count = 0;
+  
+      // Remove first
+      if (index === 0) {
+        this.head = current.next;
+      } else {
+        while (count < index) {
+          count++;
+          previous = current;
+          current = current.next;
+        }
+  
+        previous.next = current.next;
+      }
+  
+      this.size--;
+    }
+
+      
+
 
   printListData() {
     let current = this.head;
@@ -93,8 +120,9 @@ const ll = new Linklist();
 ll.insertFirst(100);
 ll.insertFirst(200);
 ll.insertFirst(300);
-ll.insertLast(400);
+//   ll.insertLast(400);
+ll.removeAt(2);
 //   ll.insertAt(500, 2);
-ll.getAt(2);
-//   ll.printListData();
+//   ll.getAt(2);
+  ll.printListData();
 
